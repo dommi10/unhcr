@@ -9,8 +9,14 @@ export default function Menu() {
   const { state, dispatch } = context;
   // mobile
   return (
-    <div className='relative z-50 flex flex-col w-full '>
-      <div className='flex justify-end w-full px-4 '>
+    <div
+      className={classNames('flex flex-col w-full', {
+        'mb-20': state.isMenuOpen,
+        'mb-2': !state.isMenuOpen,
+        'h-screen': state.isMenuOpen,
+      })}
+    >
+      <div className='flex justify-end w-full'>
         <button
           onClick={() =>
             dispatch({
@@ -46,7 +52,7 @@ export default function Menu() {
       <div
         className={classNames(
           { hidden: !state.isMenuOpen },
-          'h-[500px]  pl-8 pr-4',
+          'h-[99%]  pl-8 pr-4 pb-10',
         )}
       >
         {/* menu */}
@@ -112,7 +118,7 @@ export default function Menu() {
             <h2 className='ml-4 font-semibold medium-text'>About</h2>
           </a>
         </div>
-        <div className='inset-x-0 bottom-0 h-1/4 '>
+        <div className='inset-x-0 bottom-0 h-1/4'>
           {/* avatar */}
           <div className='flex items-center justify-start w-full'>
             <div className='relative w-[61px] h-[61px] p-10 bg-red-300 rounded-full border-6'>
@@ -126,7 +132,7 @@ export default function Menu() {
             <h2 className='ml-2 font-semibold normal-text'>Admin</h2>
           </div>
           {/* button */}
-          <button className='w-[322px] h-[51px] normal-text font-bold rounded-3xl mt-4 bg-[#2521E4] text-white '>
+          <button className='w-[322px] mr-4 h-[51px] normal-text font-bold rounded-3xl mt-4 bg-[#2521E4] text-white '>
             Deconnexion
           </button>
         </div>
