@@ -46,11 +46,11 @@ export default function Menu() {
       <div
         className={classNames(
           { hidden: !state.isMenuOpen },
-          'h-screen  pl-8 pr-4',
+          'h-[500px]  pl-8 pr-4',
         )}
       >
         {/* menu */}
-        <div className='flex flex-col justify-center flex-1 w-full h-2/4'>
+        <div className='flex flex-col justify-center flex-1 w-full h-3/4'>
           <a href='/' className='flex items-center justify-start w-full'>
             <div className='w-10 h-10'>
               <svg
@@ -112,7 +112,7 @@ export default function Menu() {
             <h2 className='ml-4 font-semibold medium-text'>About</h2>
           </a>
         </div>
-        <div className='absolute inset-x-0 bottom-0 h-[500px]'>
+        <div className='inset-x-0 bottom-0 h-1/4 '>
           {/* avatar */}
           <div className='flex items-center justify-start w-full'>
             <div className='relative w-[61px] h-[61px] p-10 bg-red-300 rounded-full border-6'>
