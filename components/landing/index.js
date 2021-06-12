@@ -21,6 +21,7 @@ export default function LandingPage() {
           </button>
         </div>
       </div>
+      {/* desktop view */}
       <FooterPage />
     </div>
   );
