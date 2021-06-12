@@ -5,6 +5,7 @@ export default function LandingPage() {
   return (
     <div className='flex flex-col w-full min-h-full p-2 px-4 bg-white '>
       <Menu />
+      {/* Mobile landing Page */}
       <div className='relative flex justify-center'>oksya</div>
     </div>
   );
