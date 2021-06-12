@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.base-text {
+  font-size: 14px !important;
+}
+
+.normal-text {
+  font-size: 18px !important;
+}
+
+.medium-text {
+  font-size: 24px !important;
+}
