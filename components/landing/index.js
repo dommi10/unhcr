@@ -4,7 +4,7 @@ import FooterPage from '../footer';
 
 export default function LandingPage() {
   return (
-    <div className='flex flex-col w-full min-h-full p-2 px-4 bg-white '>
+    <div className='flex flex-col w-full max-w-screen-lg min-h-full p-2 px-4 bg-white md:mx-auto '>
       <Menu />
       {/* Mobile landing Page */}
       <div className='relative flex flex-col'>
